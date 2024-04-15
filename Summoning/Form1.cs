@@ -17,7 +17,7 @@ namespace Summoning
         /// <summary>
         /// Initial the game
         /// </summary>
-        public Form1(String mapname)
+        public Form1(String mapname, float lightmapIntensity)
         {
             InitializeComponent();
 
@@ -43,7 +43,7 @@ namespace Summoning
 
             // Create the level with the selected map
             var mapPath = ressources + "\\Maps";
-            var scene = new Map(mapPath + "\\" + mapname, m_game, minionDeffinitions);
+            var scene = new Map(mapPath + "\\" + mapname, m_game, minionDeffinitions, lightmapIntensity);
             m_game.AddScene(scene);
 
             // Load the level and start the game

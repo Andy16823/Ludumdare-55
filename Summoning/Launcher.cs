@@ -34,7 +34,8 @@ namespace Summoning
         {
             if(!String.IsNullOrEmpty(this.comboBox1.Text))
             {
-                var gameFrame = new Form1(this.comboBox1.Text);
+                float lightmapIntensity = (float) this.trackBar1.Value / 100;
+                var gameFrame = new Form1(this.comboBox1.Text, lightmapIntensity);
                 //gameFrame.TopMost = true;
                 //gameFrame.WindowState = FormWindowState.Maximized;
                 //gameFrame.FormBorderStyle = FormBorderStyle.None;
