@@ -1,5 +1,6 @@
 # Orbital Defence: Tower Tactics
 
+## About the game
 is a 2D tower defence puzzle game that takes you into a world full of strategic challenges. Your task is to survive in a single, epic round against a multitude of enemy towers that summon orbs and threaten your base.
 
 The special thing about this game is that you not only defend, but also attack. You have the option of summoning orbs and using them specifically against the enemy towers. But be careful: timing is everything! Only if you send out the right orbs at the right time can they reach the enemy tower and cause damage.
