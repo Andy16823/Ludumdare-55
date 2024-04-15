@@ -24,11 +24,9 @@ C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Debug\Summoning.csproj.C
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Debug\Summoning.csproj.CopyComplete
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Debug\Summoning.exe
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Debug\Summoning.pdb
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Grass.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Ground.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Tower.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Tower_B.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Minion.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\LightShape.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\LightShape_1.png
-C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\LightShape_3.png
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\FomalFuture.gff
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Minions.json
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Maps\map-003.png
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Maps\map-004.png
+C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Debug\Summoning.Launcher.resources
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Debug\Resources\Sprites.galib

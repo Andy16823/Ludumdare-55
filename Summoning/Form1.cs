@@ -1,18 +1,10 @@
 ﻿using Genesis.Core;
-using Genesis.Core.GameElements;
 using Genesis.Graphics;
 using Genesis.Graphics.RenderDevice;
 using Genesis.Math;
-using Genesis.Physics;
+using Newtonsoft.Json.Linq;
 using Summoning.Navigation;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Summoning
@@ -25,30 +17,37 @@ namespace Summoning
         /// <summary>
         /// Initial the game
         /// </summary>
-        public Form1()
+        public Form1(String mapname)
         {
             InitializeComponent();
-            // Setup the game class and load the assets from the "Resources" folder. Make sure you copy them into the output directory!
+
+            // Define the ressources folder
+            String ressources = new System.IO.FileInfo(System.Reflection.Assembly.GetEntryAssembly().Location).Directory + "\\Resources";
+
+            // Setup the game class and load the assets from the "Resources" folder.
             m_game = new Game(new Experimental(this.Handle), new Viewport(this.ClientSize.Width, this.ClientSize.Height));
+            m_game.AssetManager.ImportAssetLibary(ressources + "\\Sprites.galib");
             m_game.AssetManager.LoadTextures();
+            m_game.AssetManager.LoadFonts();
+            m_game.TargetFPS = 90;
 
-            String mapPath = new System.IO.FileInfo(System.Reflection.Assembly.GetEntryAssembly().Location).Directory + "\\Resources\\Maps";
+            var minionDeffinitions = JObject.Parse(System.IO.File.ReadAllText(ressources + "\\Minions.json"));
 
-            // Setup a demo scene with an camera and an physics handler
-            var scene = new Map(mapPath + "\\map-002.png", m_game);
-            
-            scene.Camera = new Camera(new Vec3(0, 0), new Vec3(m_game.Viewport.Width, m_game.Viewport.Height), -1.0f, 1.0f);
-            scene.PhysicHandler = new PhysicsHandler2D(0f, 0f);
+            // Create the level comple scene
+            var levelCompleteMenu = new LevelCompleteMenu(m_game);
+            m_game.AddScene(levelCompleteMenu);
 
-            // Hook into the update event. You can use this lambda or create an own function for it. 
-            m_game.OnUpdate += (game, renderer) =>
-            {
-                
-            };
+            // Create the game over scene
+            var gameOverMenu = new GameOverMenu(m_game);
+            m_game.AddScene(gameOverMenu);
 
-            // Add the scene to the game and run it
+            // Create the level with the selected map
+            var mapPath = ressources + "\\Maps";
+            var scene = new Map(mapPath + "\\" + mapname, m_game, minionDeffinitions);
             m_game.AddScene(scene);
-            m_game.LoadScene("map-002.png");
+
+            // Load the level and start the game
+            m_game.LoadScene(scene);
             m_game.Start();
         }
 

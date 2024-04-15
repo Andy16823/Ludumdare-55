@@ -49,6 +49,15 @@ namespace Summoning.Navigation
             Rect rect = new Rect(x, y, width, height);
             return rect;
         }
+
+        /// <summary>
+        /// Converts the grid cell coordinates to an Vec3
+        /// </summary>
+        /// <returns></returns>
+        public Vec3 ToVec3()
+        {
+            return new Vec3(x, y);
+        }
     }
 
     /// <summary>
@@ -571,11 +580,6 @@ namespace Summoning.Navigation
                 else if(openList.ContainsKey(nbIndex))
                 {
                     openList[nbIndex].CopyValues(nb);
-                    Console.WriteLine("Here");
-                }
-                else if(closedList.ContainsKey(nbIndex))
-                {
-                    Console.WriteLine("Here!");
                 }
             }
 
