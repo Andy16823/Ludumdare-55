@@ -30,3 +30,7 @@ C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.csproj
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.csproj.CopyComplete
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.exe
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.pdb
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Release\Summoning.exe.manifest
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Release\Summoning.application
+C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.exe.manifest
+C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.application

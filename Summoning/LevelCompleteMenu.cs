@@ -23,7 +23,6 @@ namespace Summoning
             m_game = game;
             this.Name = "LevelCompleteMenu";
             this.Camera = new Camera(new Vec3(0, 0), new Vec3(game.Viewport.Width, game.Viewport.Height), -1.0f, 1.0f);
-            this.PhysicHandler = new PhysicsHandler2D(0f, 0f);
 
             var font = game.AssetManager.GetFont("Formal_Future");
 
@@ -48,6 +47,7 @@ namespace Summoning
         public void UpdateUI()
         {
             var text = Time.ToString() + " Minutes";
+            text = text.Replace(" ", "");
             var stringWidth = Utils.GetStringWidth(text, 30, 0.5f);
 
             var canvas = this.GetCanvas("Canvas");

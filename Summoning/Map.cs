@@ -90,7 +90,6 @@ namespace Summoning
             m_game = game;
             this.LightmapIntensity = lightmapIntensity;
             this.Camera = new Camera(new Vec3(0, 0), new Vec3(game.Viewport.Width, game.Viewport.Height), -1.0f, 1.0f);
-            this.PhysicHandler = new PhysicsHandler2D(0f, 0f);
 
             // Load the map data
             FileInfo fi = new FileInfo(path);
