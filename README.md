@@ -13,7 +13,8 @@ Once you have selected a map in the launcher, you can play it. The principle is 
 
 Enemy towers release an orb every 30 resources, which flies towards your tower. You can fend them off with your orbs. There are 3 different orbs that you can summon using the number buttons. 
 
-Key 1 - Minion Orb: This orb has very little life, but gives you 35 resources when you destroy an enemy orb. It is therefore suitable for collecting resources.
+##### Key 1 - Minion Orb:
+This orb has very little life, but gives you 35 resources when you destroy an enemy orb. It is therefore suitable for collecting resources.
 
 Cost: 30 resources<br />
 Life: 100 HP<br />
@@ -22,20 +23,22 @@ Orb damage: 100<br />
 Orb resources: 35<br />
 Resource from tower: 25<br />
 
-Button 2 - Towerbuster Orb: This orb also has very little life and is immediately destroyed when it collides with another orb. However, it does a lot of damage to the enemy tower (120 damage).
+##### Button 2 - Towerbuster Orb:
+This orb also has very little life and is immediately destroyed when it collides with another orb. However, it does a lot of damage to the enemy tower (120 damage).
 
-Cost: 60 resources
-Life: 100 HP
-Tower damage: 120
-Orb damage: 100
-Sphere resource: 10
-Raw material from tower: 25
+Cost: 60 resources<br />
+Life: 100 HP<br />
+Tower damage: 120<br />
+Orb damage: 100<br />
+Sphere resource: 10<br />
+Raw material from tower: 25<br />
 
-Button 3 - Tank orb: This orb is particularly suitable for destroying other orbs. It has a lot of life, but causes very little tower damage and gives very few resources.
+##### Button 3 - Tank orb: 
+This orb is particularly suitable for destroying other orbs. It has a lot of life, but causes very little tower damage and gives very few resources.
 
-Cost: 30 resources
-Life: 300 HP
-Tower damage: 5
-Sphere damage: 100
-Resource from orb: 5
-Raw material from tower: 5
+Cost: 30 resources<br />
+Life: 300 HP<br />
+Tower damage: 5<br />
+Sphere damage: 100<br />
+Resource from orb: 5<br />
+Raw material from tower: 5<br />
