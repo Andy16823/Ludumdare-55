@@ -15,12 +15,12 @@ Enemy towers release an orb every 30 resources, which flies towards your tower. 
 
 Key 1 - Minion Orb: This orb has very little life, but gives you 35 resources when you destroy an enemy orb. It is therefore suitable for collecting resources.
 
-Cost: 30 resources
-Life: 100 HP
-Tower damage: 25
-Orb damage: 100
-Orb resources: 35
-Resource from tower: 25
+Cost: 30 resources<br />
+Life: 100 HP<br />
+Tower damage: 25<br />
+Orb damage: 100<br />
+Orb resources: 35<br />
+Resource from tower: 25<br />
 
 Button 2 - Towerbuster Orb: This orb also has very little life and is immediately destroyed when it collides with another orb. However, it does a lot of damage to the enemy tower (120 damage).
 
