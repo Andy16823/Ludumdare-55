@@ -1,1 +1,0 @@
-﻿Drop in this folder your sprites. Please se
