@@ -14,6 +14,8 @@ Once you have selected a map in the launcher, you can play it. The principle is 
 
 Enemy towers release an orb every 30 resources, which flies towards your tower. You can fend them off with your orbs. There are 3 different orbs that you can summon using the number buttons. 
 
+<b>You can move the camera arround with "W A S D"</b>
+
 #### Button 1 - Minion Orb:
 This orb has very little life, but gives you 35 resources when you destroy an enemy orb. It is therefore suitable for collecting resources.
 
