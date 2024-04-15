@@ -14,7 +14,7 @@ Once you have selected a map in the launcher, you can play it. The principle is 
 
 Enemy towers release an orb every 30 resources, which flies towards your tower. You can fend them off with your orbs. There are 3 different orbs that you can summon using the number buttons. 
 
-##### Key 1 - Minion Orb:
+#### Button 1 - Minion Orb:
 This orb has very little life, but gives you 35 resources when you destroy an enemy orb. It is therefore suitable for collecting resources.
 
 Cost: 30 resources<br />
@@ -24,7 +24,7 @@ Orb damage: 100<br />
 Orb resources: 35<br />
 Resource from tower: 25<br />
 
-##### Button 2 - Towerbuster Orb:
+#### Button 2 - Towerbuster Orb:
 This orb also has very little life and is immediately destroyed when it collides with another orb. However, it does a lot of damage to the enemy tower (120 damage).
 
 Cost: 60 resources<br />
@@ -34,7 +34,7 @@ Orb damage: 100<br />
 Sphere resource: 10<br />
 Raw material from tower: 25<br />
 
-##### Button 3 - Tank orb: 
+#### Button 3 - Tank orb: 
 This orb is particularly suitable for destroying other orbs. It has a lot of life, but causes very little tower damage and gives very few resources.
 
 Cost: 30 resources<br />
