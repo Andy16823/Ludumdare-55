@@ -56,7 +56,7 @@ Colour code RGB: 0,0,0
 Colour code RGB: 255, 255, 255
 
 #### Player tower
-Colour code RGB: 251, 242, 54
+Colour code RGB: 251, 242, 54<br />
 (Only 1 player tower is allowed on the map)
 
 #### Opponent tower
