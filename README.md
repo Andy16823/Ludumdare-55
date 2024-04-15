@@ -43,3 +43,21 @@ Tower damage: 5<br />
 Sphere damage: 100<br />
 Resource from orb: 5<br />
 Raw material from tower: 5<br />
+
+## How to create own maps
+You can create your own maps using Aseprite or any other programme that can be used to edit and create pixel data. The map is generated from the colour data of the pixels. Note that an object is created for each pixel. This means that you have to define the colours for each pixel.
+
+After you are done with creating the map you can save it as png and put it into the maps folder.
+
+#### Wall
+Colour code RGB: 0,0,0
+
+#### Floor
+Colour code RGB: 255, 255, 255
+
+#### Player tower
+Colour code RGB: 251, 242, 54
+(Only 1 player tower is allowed on the map)
+
+#### Opponent tower
+Colour code RGB: 91, 110, 225
