@@ -34,3 +34,4 @@ C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.applic
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.csproj.CopyComplete
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.exe
 C:\Users\andy1\source\repos\Summoning\Summoning\obj\x64\Release\Summoning.pdb
+C:\Users\andy1\source\repos\Summoning\Summoning\bin\x64\Release\Resources\Maps\map-005.png

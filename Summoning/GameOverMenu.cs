@@ -24,6 +24,8 @@ namespace Summoning
 
         private Game m_game;
 
+        private ProgressBar m_progressBar;
+
         /// <summary>
         /// Initializes the game over menu scene.
         /// </summary>
@@ -43,18 +45,35 @@ namespace Summoning
 
             // Calculate the label width and center it in the middle of the screen
             var text = "Game Over";
-            var stringWidth = Utils.GetStringWidth(text, 42, 0.5f);
-            var levelCompleteLabel = new Label("LevelCompleteLabel", new Vec3((game.Viewport.Width / 2) - (stringWidth / 2), game.Viewport.Height / 2), text, font, Color.White);
+
+            var levelCompleteLabel = new Label("LevelCompleteLabel", new Vec3((game.Viewport.Width / 2), game.Viewport.Height / 2), text, font, Color.White, WidgetAnchor.MID_MID);
             levelCompleteLabel.FontSize = 42;
             canvas.AddWidget(levelCompleteLabel);
 
             // Create a label for the play time
-            var timeLabel = new Label("Time", new Vec3((game.Viewport.Width / 2), (game.Viewport.Height / 2) - 40), "15 Minutes", font, Color.White);
+            var timeLabel = new Label("Time", new Vec3((game.Viewport.Width / 2), (game.Viewport.Height / 2) - 30), "15 Minutes", font, Color.White, WidgetAnchor.MID_MID);
             timeLabel.FontSize = 30;
             canvas.AddWidget(timeLabel);
 
+            // Create a restart button
+            var button = new Button("button", new Vec3((game.Viewport.Width / 2), (game.Viewport.Height / 2) - 70), new Vec3(200, 30), "Restart", font, WidgetAnchor.MID_MID);
+            button.Click += (widget, wGame, wScene, wCanvas) =>
+            {
+                var map = game.GetScene<Map>();
+                map.Restart();
+                game.LoadScene(map);
+            };
+            canvas.AddWidget(button);
+
+            
+
             // Add the UI canvas to the scene
             this.AddCanvas(canvas);
+        }
+
+        private void Button_Click(Widget entity, Game game, Scene scene, Canvas canvas)
+        {
+            
         }
 
         /// <summary>
@@ -64,7 +83,6 @@ namespace Summoning
         {
             // Calculate the text width
             var text = "You survived " + Time.ToString() + " Minutes";
-            var stringWidth = Utils.GetStringWidth(text, 30, 0.5f);
 
             // Get the canvas and the widget from the scene
             var canvas = this.GetCanvas("Canvas");
@@ -72,7 +90,6 @@ namespace Summoning
 
             // Update the widget text and position
             label.Text = text;
-            label.Location.X = (m_game.Viewport.Width / 2) - (stringWidth / 2);
         }
     }
 }

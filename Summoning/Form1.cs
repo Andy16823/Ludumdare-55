@@ -24,8 +24,12 @@ namespace Summoning
             // Define the ressources folder
             String ressources = new System.IO.FileInfo(System.Reflection.Assembly.GetEntryAssembly().Location).Directory + "\\Resources";
 
+
+            RenderSettings renderSettings = new RenderSettings();
+            renderSettings.gamma = 0.5f;
+
             // Setup the game class and load the assets from the "Resources" folder.
-            m_game = new Game(new Experimental(this.Handle), new Viewport(this.ClientSize.Width, this.ClientSize.Height));
+            m_game = new Game(new Experimental(this.Handle, renderSettings), new Viewport(this.ClientSize.Width, this.ClientSize.Height));
             m_game.AssetManager.ImportAssetLibary(ressources + "\\Sprites.galib");
             m_game.AssetManager.LoadTextures();
             m_game.AssetManager.LoadFonts();

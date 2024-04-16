@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Genesis.dll" size="273408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Genesis.dll" size="263680">
       <assemblyIdentity name="Genesis" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u7M15XsaGt6dXfnB4F+ecGommZU4qqnS/MiD9VsNsgE=</dsig:DigestValue>
+        <dsig:DigestValue>Rg/VGGuHyxP4/O0EqeKEXfQJFpF9ex/hteSS/wlHOVY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -91,13 +91,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetGL.dll" size="226816">
-      <assemblyIdentity name="NetGL" version="1.0.8871.36811" language="neutral" processorArchitecture="amd64" />
+      <assemblyIdentity name="NetGL" version="1.0.8872.31560" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9QHbt2UPLyiKvmhPOsfTmEJk0grRzgpr2o2mEC3vqOs=</dsig:DigestValue>
+        <dsig:DigestValue>1gD22UrkHw2+2JKn9AlaZ7iJRspJc/0J7ZJNWW5uEEs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Summoning.exe" size="98272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Summoning.exe" size="99296">
       <assemblyIdentity name="Summoning" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ODQcmrHz7jIrQeqAUpMlRbaxnfZ60AOkGBiJTwwZG4o=</dsig:DigestValue>
+        <dsig:DigestValue>nLlyjETK70RMa+RagEfTxS3P9N0pPHH4si/mNRwiqQI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -159,6 +159,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>ikmFF4BU9C/ZKGRD1t8OmPCkNS85VC4oEd1gQb7R6LQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Maps\map-005.png" size="223">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>//8R6gIQd5vbuGz1yT2FYp8WQkzWINzk2Wwq7T3b1uI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Readme.txt" size="46">

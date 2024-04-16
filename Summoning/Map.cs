@@ -90,6 +90,7 @@ namespace Summoning
             m_game = game;
             this.LightmapIntensity = lightmapIntensity;
             this.Camera = new Camera(new Vec3(0, 0), new Vec3(game.Viewport.Width, game.Viewport.Height), -1.0f, 1.0f);
+            this.PhysicHandler = new PhysicsHandler2D(0, 0);
 
             // Load the map data
             FileInfo fi = new FileInfo(path);
@@ -118,7 +119,6 @@ namespace Summoning
                     {
                         enemy.RenderHealthbar(g, enemy.Parent);
                     }
-                    
                 }
             };
 
@@ -162,6 +162,7 @@ namespace Summoning
                         grass.AddShape(new Vec3(x * 32, y * 32), new Vec3(32, 32));
 
                         var tower = new Sprite("Tower_" + x.ToString() + "_" + y.ToString(), new Vec3(x * 32, y * 32), new Vec3(64, 64), game.AssetManager.GetTexture("Tower.png"));
+                        tower.Tag = "Enemy";
                         var towerBehavior = tower.AddBehavior(new EnemyTower(NavMesh, m_playerTower, x, y));
                         this.Destinations.Add(towerBehavior);
                         this.SelectedTower = towerBehavior;
@@ -209,6 +210,7 @@ namespace Summoning
         {
             var canvas = new Canvas("Overlay", new Vec3(0, 0), new Vec3(game.Viewport.Width, game.Viewport.Height));
             var label = new Genesis.UI.Label("ressources", new Vec3(15, 15), "Ressources", game.AssetManager.GetFont("Formal_Future"), Color.White);
+            label.TextColor = Color.Red;
             canvas.AddWidget(label);
 
             this.AddCanvas(canvas);
@@ -312,6 +314,38 @@ namespace Summoning
                 menu.UpdateUI();
                 m_game.LoadScene(menu);
             }
+        }
+
+        /// <summary>
+        /// Restart the game
+        /// </summary>
+        public void Restart()
+        {
+            // Clear all minions
+            this.GetLayer("MinionLayer").Elements.Clear();
+
+            // Reset tower stats
+            this.Destinations.Clear();
+            foreach (var tower in this.GetLayer("TowerLayer").Elements)
+            {
+                if(tower.Tag == "Enemy")
+                {
+                    var towerBehavior = (Tower)tower.GetBehavior<EnemyTower>();
+                    towerBehavior.Health = towerBehavior.MaxHealth;
+                    towerBehavior.Ressources = 0;
+                    towerBehavior.LastPowerGain = Utils.GetCurrentTimeMillis();
+                    this.Destinations.Add(towerBehavior);
+                }
+                else
+                {
+                    var towerBehavior = (Tower)tower.GetBehavior<PlayerTower>();
+                    towerBehavior.Health = towerBehavior.MaxHealth;
+                    towerBehavior.Ressources = 0;
+                    towerBehavior.LastPowerGain = Utils.GetCurrentTimeMillis();
+                }
+            }
+
+            this.Started = false;
         }
 
         /// <summary>

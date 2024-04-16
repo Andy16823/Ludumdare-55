@@ -122,7 +122,7 @@ namespace Summoning.Behaviors
             {
                 if (game.SelectedScene.GetType() == typeof(Map))
                 {
-                    if (SummonMinion(game, (JObject)minion, 1000))
+                    if (SummonMinion(game, (JObject)minion, 250))
                     {
                         this.Ressources -= (int)minion["cost"];
                     }
